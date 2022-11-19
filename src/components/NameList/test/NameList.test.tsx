@@ -9,8 +9,8 @@ test("Name List Test", () => {
         return data;
       }}
       nameList={["John", "Mark"]}
-      setNotification={(msg: Object) => {
-        msg = { msg: "", color: "" };
+      setNotification={(msg: string) => {
+        msg = "";
         return msg;
       }}
     />
@@ -25,8 +25,8 @@ test("Name Update Test", () => {
         return data;
       }}
       nameList={["John", "Mark"]}
-      setNotification={(msg: Object) => {
-        msg = { msg: "Edit successfully.", color: "info" };
+      setNotification={(msg: string) => {
+        msg = "Edit successfully.";
         return msg;
       }}
     />
@@ -46,8 +46,8 @@ test("Name Delete Test", () => {
         return data;
       }}
       nameList={["John", "Mark"]}
-      setNotification={(msg: Object) => {
-        msg = { msg: "Deleted successfully.", color: "danger" };
+      setNotification={(msg: string) => {
+        msg = "Deleted successfully.";
         return msg;
       }}
     />

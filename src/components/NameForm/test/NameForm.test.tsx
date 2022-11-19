@@ -5,8 +5,8 @@ test('Name Form Test', () => {
   render(<NameForm setNameList={(data: string[]) => {
     data = ["John"]
     return data;
-  }} nameList={[]} setNotification={(msg: Object) => {
-    msg = {msg: "Name", color: "primary"}
+  }} nameList={[]} setNotification={(msg: string) => {
+    msg = "Added Successfully."
     return msg;
   }} />)
   const addButton = screen.getByTestId("add-button");
